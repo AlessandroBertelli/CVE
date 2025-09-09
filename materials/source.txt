@@ -1,0 +1,4 @@
+https://www.kaggle.com/code/andrewkronser/cve-exploratory-analysis
+
+
+https://www.kaggle.com/code/gulsahdemiryurek/cve-exploratory-data-analysis#NATIONAL-VULNERABILITY-DATABASE-(NVE)
