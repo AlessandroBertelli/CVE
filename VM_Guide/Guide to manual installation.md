@@ -17,14 +17,14 @@ tar -xzvf hadoop-3.4.1.tar.gz
 sudo mv hadoop-3.4.1 /usr/local/hadoop
 
 # Set Hadoop environment variables in .zshrc
-echo 'export HADOOP_HOME=/usr/local/hadoop' >> ~/.zshrc
-echo 'export PATH=$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$PATH' >> ~/.zshrc
-echo 'export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop' >> ~/.zshrc
-echo 'export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-arm64' >> ~/.zshrc
-echo 'export PATH=$JAVA_HOME/bin:$PATH' >> ~/.zshrc
+echo 'export HADOOP_HOME=/usr/local/hadoop' >> ~/.bashrc
+echo 'export PATH=$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$PATH' >> ~/.bashrc
+echo 'export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop' >> ~/.bashrc
+echo 'export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-arm64' >> ~/.bashrc
+echo 'export PATH=$JAVA_HOME/bin:$PATH' >> ~/.bashrc
 
 # Apply the new environment variable settings
-source ~/.zshrc
+source ~/.bashrc
 
 # Configure Hadoop for pseudo-distributed mode
 
@@ -112,11 +112,11 @@ tar -xzf spark-3.5.7-bin-hadoop3.tgz
 sudo mv spark-3.5.7-bin-hadoop3 /usr/local/spark3
 
 # Add Spark environment variables (example for Zsh)
-echo 'export SPARK_HOME=/usr/local/spark3' >> ~/.zshrc
-echo 'export PATH=$SPARK_HOME/bin:$PATH' >> ~/.zshrc
+echo 'export SPARK_HOME=/usr/local/spark3' >> ~/.bashrc
+echo 'export PATH=$SPARK_HOME/bin:$PATH' >> ~/.bashrc
 
 # Apply the new environment variable settings
-source ~/.zshrc
+source ~/.bashrc
 
 # (If using Bash, edit ~/.bashrc instead of ~/.zshrc)
 

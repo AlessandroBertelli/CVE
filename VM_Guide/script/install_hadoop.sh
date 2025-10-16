@@ -19,12 +19,12 @@ echo "🚚 Moving Hadoop to /usr/local..."
 sudo mv hadoop-3.4.1 /usr/local/hadoop
 
 echo "🔧 Configuring environment variables..."
-echo 'export HADOOP_HOME=/usr/local/hadoop' >> ~/.zshrc
-echo 'export PATH=$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$PATH' >> ~/.zshrc
-echo 'export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop' >> ~/.zshrc
-echo 'export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-arm64' >> ~/.zshrc
-echo 'export PATH=$JAVA_HOME/bin:$PATH' >> ~/.zshrc
-source ~/.zshrc
+echo 'export HADOOP_HOME=/usr/local/hadoop' >> ~/.bashrc
+echo 'export PATH=$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$PATH' >> ~/.bashrc
+echo 'export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop' >> ~/.bashrc
+echo 'export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-arm64' >> ~/.bashrc
+echo 'export PATH=$JAVA_HOME/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
 
 echo "📝 Writing Hadoop configuration files..."
 cd /usr/local/hadoop/etc/hadoop

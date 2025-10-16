@@ -15,9 +15,9 @@ echo "🚚 Moving Spark to /usr/local..."
 sudo mv spark-3.5.7-bin-hadoop3 /usr/local/spark3
 
 echo "🔧 Configuring environment variables..."
-echo 'export SPARK_HOME=/usr/local/spark3' >> ~/.zshrc
-echo 'export PATH=$SPARK_HOME/bin:$PATH' >> ~/.zshrc
-source ~/.zshrc
+echo 'export SPARK_HOME=/usr/local/spark3' >> ~/.bashrc
+echo 'export PATH=$SPARK_HOME/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
 
 echo "🧪 Verifying Spark installation..."
 spark-shell --version

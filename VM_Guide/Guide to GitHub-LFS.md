@@ -24,4 +24,4 @@ Use the git clone command followed by the URL you copied.
 Git LFS will automatically detect and download the large files during this process.
 
 
-git clone https://github.com/margherita-santarossa/CVE
+git clone https://github.com/alessandro-bertelli-polimi/CVE
