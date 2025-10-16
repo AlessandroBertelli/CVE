@@ -1,6 +1,7 @@
 # Update package lists
 sudo apt update -y
 
+
 # Install OpenJDK 11
 sudo apt-get install openjdk-11-jdk -y
 
