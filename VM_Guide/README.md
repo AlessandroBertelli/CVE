@@ -4,7 +4,7 @@ This guide contains 3 shell scripts to automate the installation and setup of:
 
 - Apache Hadoop 3.4.1
 - Apache Spark 3.5.7
-- Python Virtual Environment with Jupyter Notebook and PySpark
+- Python Virtual Environment with Jupyter Notebook
 
 ---
 
@@ -14,7 +14,7 @@ This guide contains 3 shell scripts to automate the installation and setup of:
 |------------------------|--------------------------------------------|
 | `install_hadoop.sh`   | Installs and configures Hadoop 3.4.1       |
 | `install_spark.sh`    | Installs Apache Spark 3.5.7 with Hadoop 3  |
-| `setup_jupyter.sh`    | Creates a Python virtualenv with Jupyter and PySpark |
+| `setup_jupyter.sh`    | Creates a Python virtualenv with Jupyter |
 
 ---
 

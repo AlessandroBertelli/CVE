@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # =====================================================
-# Python Environment + Jupyter + PySpark Setup Script
+# Python Environment + Jupyter  Setup Script
 # =====================================================
 
 echo "🐍 Installing Python 3 and pip..."
@@ -14,19 +14,16 @@ sudo apt install jupyter-notebook -y
 echo "📦 Installing Python venv support..."
 sudo apt install python3.12-venv -y
 
-echo "📁 Creating Python virtual environment in ~/myenv"
-python3 -m venv ~/myenv
+echo "📁 Creating Python virtual environment in ~/dataenv"
+python3 -m venv ~/dataenv
 
 echo "📲 Activating virtual environment..."
-source ~/myenv/bin/activate
-
-echo "⬇️ Installing Jupyter and PySpark..."
-pip install jupyter pyspark
+source ~/dataenv/bin/activate
 
 echo ""
-echo "✅ Jupyter + PySpark setup complete!"
+echo "✅ Jupyter setup complete!"
 echo "👉 To activate the virtual environment again later, run:"
-echo "   source ~/myenv/bin/activate"
+echo "   source ~/dataenv/bin/activate"
 echo "👉 To start Jupyter Notebook, run:"
 echo "   jupyter notebook"
 

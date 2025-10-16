@@ -5,8 +5,8 @@
 # ==================================================
 
 echo "📦 Installing Java 11..."
-sudo apt update
-sudo apt-get install -y openjdk-11-jdk
+sudo apt update -y
+sudo apt-get install -y openjdk-11-jdk -y
 
 echo "📥 Downloading Hadoop..."
 cd ~/Downloads
